@@ -1,23 +1,12 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import FinancingStep from "./components/financingStep/index.tsx";
+import Forum from "./components/financingSolver/implementations/forum/index.tsx";
+import Santander from "./components/financingSolver/implementations/santander/index.tsx";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <FinancingStep FinancingComponent={Forum} />
     </div>
   );
 }
